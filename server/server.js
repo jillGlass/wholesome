@@ -13,3 +13,5 @@ server.get('/:id', (req, res) => {
     .then(p => res.json(p))
     .catch(err => res.status(500).send('Never have I ever had a database error' + err.message))
 })
+
+module.exports = server
