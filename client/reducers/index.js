@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 
 import recievePrompt from './recievePrompt'
-import promptRequest from './requestPrompt'
+import waiting from './waiting'
 import errorMessage from './errorMsg'
 
 export default combineReducers({
   recievePrompt,
-  promptRequest,
+  waiting,
   errorMessage
 })
