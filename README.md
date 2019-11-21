@@ -14,8 +14,11 @@ To start the development server with a watcher that rebuilds your code, run `npm
 
 Additional components should be placed in `client/components`.
 
-## Separate client/server
+## Sever Documentation
 
+table name: prompt, 2 columns 'id' = integer and 'prompt' = string.
+
+ template: 
 The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
 ```sh
 npm run client
