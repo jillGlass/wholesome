@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from './Header'
+import Footer from './Footer'
 
 const App = () => {
   return (
     <>
-    <Header>
-      <h1>React development has begun!</h1>
-    </Header>
+    <Header/>
+    <Footer/>
     </>
   )
 }

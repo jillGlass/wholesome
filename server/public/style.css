@@ -1,73 +1,41 @@
 body {
     margin: 0;
-  
-    font-family: "Raleway", sans-serif;
-  }
-  
-  ul,
-  ol {
-    padding: 0;
-    margin: 0;
-  }
-  
-  a:link {
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:visited {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
   }
   
   .navigation {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
-    list-style: none;
     background-color: #000000;
-    margin: 0;
-    
+    margin: 0, 0, 0, 0 ;
+    max-height: 20%;
+    text-align: center;
   }
   
   .navigation h1 {
     color: rgb(255, 255, 255);
-    float: left;
     text-align: center;
-    padding: 25px 20px;
+    padding: 0;
     text-decoration: none;
   }
   
-  /* .navigation a.active {
-    background-color: rgb(194, 186, 186);
-    padding-top: 25px;
-    padding-bottom: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-bottom-left-radius: 0.2em;
-    border-bottom-right-radius: 0.2em;
-  } */
-  
-  .nav-center {
+  .title {
     float: none;
-    position: absolute;
-    color: rgb(255, 255, 255);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* height: 20%; */
     cursor: pointer;
-  }
-  
-  /* .nav-right a {
-    float: center;
-    font-size: 40px;
-  }
+    font-size: 12rem;
+    letter-spacing: 1.5rem;
+  } 
 
-  #burger {
-    float: none;
-    padding: 25px 10px;
-    height: 148px;
-    cursor: pointer;
-  } */
+  .sticky {
+    position: fixed;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 25rem;
+    width: 100%;
+  }

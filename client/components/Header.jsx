@@ -5,12 +5,9 @@ class Header extends React.Component {
   render () {
     return (
       <nav>
-        <ul className="navigation">
-          <div className="nav-right">
-            <h1 className="burger">NEVER</h1>
-          
-          </div>
-        </ul>
+        <div className="navigation">
+          <h1 className="title">NEVER</h1>
+        </div>
       </nav>
 
     )
