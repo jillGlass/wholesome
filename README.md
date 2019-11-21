@@ -16,8 +16,56 @@ Additional components should be placed in `client/components`.
 
 ## Sever Documentation
 
-Table name: `prompt`, with 2 columns `id` = integer and `promptItem` = string.
-Route: only route is `/:id`
+
+### Table name: 
+`prompt`, with 2 columns `id` = integer and `promptItem` = string.
+
+
+| Column        | Type          | Null  |
+| ------------- |:-------------:| -----:|
+| id            | integer       |  No   |
+| promptItem    | String        |  No   |
+
+### Route:
+only route is `/:id`
+
+### API requirements:
+
+#### Allowed HTTP requests
+
+GET :Get a resource or list of resources
+
+### Description of Server Responses:
+
+200 `OK` the request was successful
+
+204 `NO CONTENT` - the request was successful but thee is no representation to return. 
+
+400 `BAD REQUEST` - the request could not be understood or was missing required parameters.
+
+500 `NEVER HAVE I EVER HAD A DATABASE ERROR` - database error. 
+
+### PROMPT
+
+GET http://localhost:3000/:id
+
+#### Parameters
+
+id    Numberic id of the prompt to be displayed     Number
+
+Response 
+
+200
+
+Example Body:
+
+{
+  "id": 1,
+  "promptItem": 'been kicked out of a bar'
+}
+
+
+
 
  template: 
 The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
