@@ -1,8 +1,8 @@
-import { REQUEST_PROMPT, RECEIVE_PROMPT, SHOW_ERROR } from '../actions'
+import { RECEIVE_PROMPT } from '../actions'
 
-function promptReducer (state = {}, action) {
-  switch(action.type) {
-    case RECIEVE_PROMPT:
+export default function promptReducer (state = {}, action) {
+  switch (action.type) {
+    case RECEIVE_PROMPT:
       return action.prompts
 
     default:
@@ -10,9 +10,8 @@ function promptReducer (state = {}, action) {
   }
 }
 
-
-{
-  waiting: true,
-  id: '',
-  prompt: ''
-}
+// {
+//   waiting: true,
+//   id: '',
+//   prompt: ''
+// }
