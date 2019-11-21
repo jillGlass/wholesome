@@ -9,9 +9,3 @@ export default function promptReducer (state = {}, action) {
       return state
   }
 }
-
-// {
-//   waiting: true,
-//   id: '',
-//   prompt: ''
-// }
