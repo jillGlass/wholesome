@@ -16,7 +16,8 @@ Additional components should be placed in `client/components`.
 
 ## Sever Documentation
 
-table name: prompt, 2 columns 'id' = integer and 'prompt' = string.
+Table name: `prompt`, with 2 columns `id` = integer and `promptItem` = string.
+Route: only route is `/:id`
 
  template: 
 The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
