@@ -30,7 +30,7 @@ body {
     
   }
   
-  .navigation a {
+  .navigation h1 {
     color: rgb(255, 255, 255);
     float: left;
     text-align: center;
@@ -38,7 +38,7 @@ body {
     text-decoration: none;
   }
   
-  .navigation a.active {
+  /* .navigation a.active {
     background-color: rgb(194, 186, 186);
     padding-top: 25px;
     padding-bottom: 15px;
@@ -47,7 +47,7 @@ body {
     display: inline-block;
     border-bottom-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
-  }
+  } */
   
   .nav-center {
     float: none;
@@ -60,14 +60,14 @@ body {
     cursor: pointer;
   }
   
-  .nav-right a {
-    float: right;
+  /* .nav-right a {
+    float: center;
     font-size: 40px;
   }
 
   #burger {
-    float: right;
+    float: none;
     padding: 25px 10px;
-    height: 48px;
+    height: 148px;
     cursor: pointer;
-  }
+  } */
