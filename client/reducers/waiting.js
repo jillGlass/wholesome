@@ -1,4 +1,4 @@
-import { REQUEST_PROMPT, SHOW_ERROR, RECEIVE_PROMPT } from '../actions'
+import { REQUEST_PROMPT, SHOW_ERROR, RECEIVE_PROMPT } from '../actions/index'
 
 export default function waiting (state = false, action) {
   switch (action.type) {

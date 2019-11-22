@@ -1,4 +1,4 @@
-import { SHOW_ERROR } from '../actions'
+import { SHOW_ERROR } from '../actions/index'
 
 export default function errorMessage (state = '', action) {
   switch (action.type) {
