@@ -19,14 +19,15 @@ render () {
   console.log(this.props.prompt)
   return (
       <>
-      <div className="container">
-        <ul>
+      <div className="content">
+        <ul style ={{ listStyle: 'none' }} >
           {this.props.prompt.map(item => {
-            return <li key={item.id}>{item.promptItem}</li>
+            return <li style ={{ textDecoration: 'none' }} key={item.id}>{item.promptItem} <button onClick={this.handleClick}>Next</button></li>
           })}
         </ul>
-        <p>{this.props.prompt.promptItem}</p>
         <button onClick={this.handleClick}>Next</button>
+        <p>{this.props.prompt.promptItem}</p>
+        
       </div>
       </>
   )

@@ -2,6 +2,7 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    text-decoration: none;
   }
   
   .content{
@@ -12,7 +13,23 @@ body {
     text-align: center;
     height: 25%;
     font-size: 7rem;
+    text-decoration: none;
   }
+
+  button {
+    background-color: black;
+    color: white;
+    height: 2em;
+    width: 4em;
+  }
+
+  li {
+    text-decoration: none;
+  }
+
+  /* button {
+    margin-bottom: 250px;
+  } */
 
   .navigation {
     /* position: relative; */
