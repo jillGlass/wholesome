@@ -9,7 +9,7 @@ class Footer extends React.Component {
     return (
       <nav>
         <div className="sticky">
-          <div className="navigation">
+          <div className="bottom">
             <h1 className="title">HAVE I EVER</h1>
           </div>
         </div>
