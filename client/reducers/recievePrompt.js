@@ -1,14 +1,13 @@
 import { RECEIVE_PROMPT } from '../actions'
 
-export default function prompt (state = {}, action) {
+const initialState = []
+
+export default function prompt (state = initialState, action) {
   switch (action.type) {
     case RECEIVE_PROMPT:
-      console.log('reducer here')
-      console.log(action.prompt)
-      return {
-        ...state,
-        prompt: action.prompt
-      }
+      // console.log('reducer here')
+      // console.log(action.prompt)
+      return action.prompt
 
     default:
       return state

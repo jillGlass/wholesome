@@ -5,9 +5,9 @@ export const RECEIVE_PROMPT = 'RECEIVE_PROMPT'
 export const SHOW_ERROR = 'SHOW_ERROR'
 
 export function fetchPrompts (id) {
-  console.log('here, here fetchPrompts!!')
+  // console.log('here, here fetchPrompts!!')
   return (dispatch) => {
-    console.log('Hi')
+    // console.log('Hi')
     dispatch(requestPrompt())
     return request
       .get(`/${id}`)
@@ -25,7 +25,7 @@ export function requestPrompt () {
 export function receivePrompt (post) {
   return {
     type: RECEIVE_PROMPT,
-    post: post
+    prompt: post
   }
 }
 
