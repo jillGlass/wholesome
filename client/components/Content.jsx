@@ -2,45 +2,46 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { fetchPrompts } from '../actions/index'
 
-class Content extends React.Component {
+export class Content extends React.Component {
   state = {
     num: 1
   }
 
 handleClick = () => {
-  this.setState({
+  // Num total is 20 in database
+  Number(this.state.num) < 20 ? this.setState({
     num: this.state.num + 1
-  }, () => this.props.dispatch(fetchPrompts(this.state.num)))
+  })
+    : this.setState({
+      num: 1
+    })
 }
 
 render () {
-  // const { fetchPrompts } = this.props
-
-  console.log(this.props.prompt)
+  const { fetchPrompts, promptItem } = this.props
   return (
-      <>
-      <div className="content">
-        <ul style ={{ listStyle: 'none' }} >
-          {this.props.prompt.map(item => {
-            return <li style ={{ textDecoration: 'none' }} key={item.id}>{item.promptItem} <button onClick={this.handleClick}>Next</button></li>
-          })}
-        </ul>
-        <button onClick={this.handleClick}>Next</button>
-        <p>{this.props.prompt.promptItem}</p>
-        
+    <div className="content">
+      <div>
+        <button onClick={() => { this.handleClick(); fetchPrompts(this.state.num) }}>Next</button>
+        <p>{promptItem}</p>
       </div>
-      </>
+    </div>
   )
 }
 }
 
 const mapStateToProps = (state) => {
   return {
-    prompt: state.prompt
+    promptItem: state.prompt.promptItem
   }
 }
 
-export default connect(
-  mapStateToProps
-)(Content)
+// If don't use mapDispatchToProps, use this.props.dispatch(fetchPrompts(this.state.num)
+const mapDispatchToProps = dispatch => ({
+  fetchPrompts: (num) => dispatch(fetchPrompts(num))
+})
 
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Content)

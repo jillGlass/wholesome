@@ -1,13 +1,15 @@
 import { RECEIVE_PROMPT } from '../actions'
 
-const initialState = []
+const initialState = {
+  promptItem: 'been kicked out of a bar'
+}
 
 export default function prompt (state = initialState, action) {
   switch (action.type) {
     case RECEIVE_PROMPT:
-      // console.log('reducer here')
-      // console.log(action.prompt)
-      return action.prompt
+      return {
+        ...state,
+        promptItem: action.prompt.promptItem }
 
     default:
       return state

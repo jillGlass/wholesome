@@ -7,5 +7,5 @@ module.exports = {
 }
 
 function getPromptById (id, db = connection) {
-  return db('prompt').where('id', id).select()
+  return db('prompt').where('id', id).select().first()
 }
